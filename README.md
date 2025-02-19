@@ -1,4 +1,4 @@
-# 📚 **Course Content: Session 1 - HTML (HyperText Markup Language)**
+# 📚 **Session 1 - HTML (HyperText Markup Language)**
 
 ## 🎯 **Session Objectives:**
 By the end of this session, students will be able to:
