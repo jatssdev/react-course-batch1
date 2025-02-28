@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .card {
+            border: 1px solid black;
+            width: 400px;
+            position: relative;
+            height: 600px;
+            /* overflow: auto; */
+            overflow: hidden;
+        }
+
+        .card:hover .content {
+            top: 0;
+            height: 100%;
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card .content {
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transition: .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://ss7.vzw.com/is/image/VerizonWireless/apple-iphone-16-ultramarine-c?wid=465&hei=465&fmt=webp"
+            alt="">
+        <div class="content">
+            <h2>Apple iphone 17++</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, natus!</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, eius.</h1>
+
+</body>
+
+</html>
