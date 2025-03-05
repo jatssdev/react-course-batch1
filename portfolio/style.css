@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    background-color: tomato;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 10vh;
+}
+
+.navbar .links {
+    display: flex;
+    /* gap: 20px; */
+}
+
+.navbar .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: .5s;
+
+}
+
+.navbar .links a:hover {
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/gradient-background-1920x1080-11027.jpg');
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    padding: 0 10%;
+    gap: 10%;
+}
+
+.hero .col1 {
+    width: 50%;
+
+
+}
+
+.hero .col2 {
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin: 20px 0;
+}
+
+.hero h3 {
+    font-size: 30px;
+}
+
+.hero h1 span {
+    color: tomato;
+}
+
+.about {
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding: 150px;
+}
+
+.about .content h1 {
+    margin: 20px 0;
+}
+.about .content{
+    width: 50%;
+}
+.about .content p{
+    line-height: 1.7;
+    color: rgb(189, 189, 189);
+}
+.about .content h2{
+   font-size: 20px;
+    color: rgb(189, 189, 189);
+}
+.about .cards{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+
+}
+.cards .card{
+    width: 25%;
+    position: relative;
+    transition: .5s;
+    top: 0;
+    border-radius: 8px;
+    padding: 50px;
+    background-color: tomato;
+    text-align: center;
+}
+.cards .card i{
+    font-size: 70px;
+    
+}
+.cards .card:hover{
+    top:10px;
+}

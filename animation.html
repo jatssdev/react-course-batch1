@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            animation-name: box-animation;
+            animation-duration: 3s;
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: linear; */
+
+
+
+            /* animation-iteration-count: infisnite; */
+        }
+
+        /* @keyframes box-animation {
+            from {
+                transform: translate(0);
+            }
+
+            to {
+                transform: translate(400px);
+            }
+        } */
+
+        @keyframes box-animation {
+            0% {
+                transform: translate(0, 0);
+                background-color: green;
+            }
+
+            25% {
+                transform: translate(400px, 0);
+
+            }
+
+            50% {
+                transform: translate(400px, 400px);
+
+            }
+
+            75% {
+                transform: translate(0, 400px);
+
+            }
+
+            100% {
+                transform: translate(20px, 20px);
+                background-color: red;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
