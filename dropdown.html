@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .dropdown>p {
+            background-color: black;
+            color: white;
+            padding: 18px;
+        }
+
+        .dropdown {
+            width: 200px;
+        }
+
+        .dropdown .drop p {
+            padding: 10px;
+            background-color: gray;
+            color: wheat;
+        }
+
+        .dropdown .drop p:hover {
+
+            background-color: rgb(66, 66, 66);
+            color: wheat;
+        }
+
+        .drop {
+            display: none;
+        }
+
+        .dropdown:hover .drop {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./dropdown.html">Dropdown</a>
+
+    <a href="./animation.html">Animation</a>
+    <div class="dropdown">
+        <p>SELECT OPTION</p>
+        <div class="drop">
+            <p>OPTION 1</p>
+            <p>OPTION 1</p>
+            <p>OPTION 1</p>
+            <p>OPTION 1</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
