@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 500px;
+            border: 1px solid black;
+            background-color: red;
+
+        }
+
+        .wrapper {
+            padding: 50px;
+            /* display: flex;
+            flex-wrap: wrap;
+            gap: 20px; */
+
+            display: grid;
+            gap: 20px;
+            /* grid-template-columns: repeat(4, 25%); */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 300px 100px 400px; */
+
+
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: tomato;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 100px;
+            position: relative;
+            height: 10vh;
+        }
+
+        .navbar .links {
+            display: flex;
+            transition: .5s;
+            /* gap: 20px; */
+        }
+
+        .navbar .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 20px;
+            transition: .5s;
+
+        }
+
+        .navbar .links a:hover {
+            background-color: white;
+            border-radius: 4px;
+            color: black;
+
+        }
+
+        .navbar .navbarToggleButton {
+            display: none;
+        }
+
+        @media screen and (max-width:1300px) {
+            .wrapper {
+
+                grid-template-columns: 1fr 1fr 1fr;
+
+
+
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .navbar h2 {
+                font-size: 20px;
+            }
+
+            .navbar .links a {
+                font-size: 16px;
+            }
+
+            .wrapper {
+
+
+                padding: 50px 20px;
+
+
+
+            }
+
+            h1 {
+                font-size: 19px;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .navbar {
+                padding: 0 30px;
+            }
+
+            .wrapper {
+
+
+                grid-template-columns: 1fr 1fr;
+
+
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+            .wrapper {
+                grid-template-columns: 1fr;
+                padding: 30px 5px;
+            }
+
+        }
+
+        @media screen and (max-width:750px) {
+            .navbar .links {
+                flex-direction: column;
+                background-color: rgb(170, 170, 170);
+                position: absolute;
+                width: 100%;
+                top: 100%;
+                height: 0;
+                overflow: hidden;
+                left: 0;
+            }
+
+            .navbar .links a {
+                color: white;
+                display: inline-block
+            }
+
+            .navbar .navbarToggleButton {
+                display: block;
+            }
+
+            .navbar .navbarToggleButton:hover+.links {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>JATIN - MERN STACK</h2>
+        <i class="fa-solid fa-bars navbarToggleButton"></i>
+        <div class="links">
+            <p><a href="/">Home</a></p>
+            <p><a href="/">About</a></p>
+            <p><a href="/">Service</a></p>
+            <p><a href="/">Contact</a></p>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis dolorem deserunt suscipit nobis
+                nulla debitis obcaecati eaque et ullam est magnam, sit assumenda recusandae nisi maiores, ducimus ea
+                expedita!</h1>
+
+        </div>
+    </div>
+</body>
+
+</html>
